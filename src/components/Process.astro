@@ -1,0 +1,88 @@
+---
+
+---
+
+<section class="process container" aria-labelledby="process-heading">
+  <p class="section-label">Como funciona</p>
+  <h2 id="process-heading" class="section-title">Processo de trabalho</h2>
+  <ol class="process__steps" role="list">
+    <li class="process__step">
+      <span class="process__num" aria-hidden="true">01</span>
+      <div>
+        <h3 class="process__title">Alinhamento</h3><p>
+          Entendo seus desafios e objetivos específicos de negócio sem pressa.
+        </p>
+      </div>
+    </li>
+    <li class="process__step">
+      <span class="process__num" aria-hidden="true">02</span>
+      <div>
+        <h3 class="process__title">Diagnóstico</h3><p>Avaliação técnica do produto, fluxos ou maturidade da equipe.</p>
+      </div>
+    </li>
+    <li class="process__step">
+      <span class="process__num" aria-hidden="true">03</span>
+      <div>
+        <h3 class="process__title">Execução</h3><p>Aplicação prática das melhorias e treinamentos necessários.</p>
+      </div>
+    </li>
+    <li class="process__step">
+      <span class="process__num" aria-hidden="true">04</span>
+      <div>
+        <h3 class="process__title">Suporte contínuo</h3><p>
+          Acompanhamento para garantir evolução constante e evitar regressões.
+        </p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<style lang="scss">
+  .process {
+    border-block-end: 1px solid var(--color-border);
+    padding-block: 6rem;
+  }
+  .process .section-title {
+    margin-block: 0.25rem 2rem;
+  }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .process__step {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-block-start: 3px solid var(--brand-red);
+    padding-block-start: 1rem;
+  }
+
+  .process__num {
+    color: var(--brand-blue);
+    font-weight: 700;
+    font-size: 0.68rem;
+    font-family: var(--font-sans);
+    letter-spacing: 0.14em;
+  }
+  .process__title {
+    margin: 0;
+    color: var(--brand-black);
+    font-weight: 700;
+    font-size: 1.05rem;
+    font-family: var(--font-serif);
+  }
+  .process__step p {
+    margin: 0;
+    color: var(--color-muted);
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-family: var(--font-sans);
+  }
+</style>

@@ -1,0 +1,16 @@
+---
+import { Heading } from 'accessible-astro-components'
+import Counter from '@components/Counter.astro'
+---
+
+<section class="mt-64 mb-32">
+  <div class="container">
+    <Heading level="h2" class="mb-16">Impact in numbers</Heading>
+    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+      <Counter count="1.100+" title="Stars" sub="On GitHub" />
+      <Counter count="35+" title="Accessible" sub="Components" />
+      <Counter count="500+" title="Commits" sub="Merged" />
+      <Counter count="48+" title="Months" sub="Since launch" />
+    </div>
+  </div>
+</section>
