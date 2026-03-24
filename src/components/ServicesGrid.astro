@@ -1,0 +1,46 @@
+---
+import { Link } from 'accessible-astro-components'
+import Feature from '@components/Feature.astro'
+---
+
+<section class="services my-24" id="servicos" aria-labelledby="services-heading">
+  <div class="container">
+    <p class="mb-6">Do diagnóstico à cultura da equipe — atuo em toda a jornada de acessibilidade.</p>
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <Feature icon="lucide:accessibility" title="Diagnóstico e auditoria">
+        Avaliações focadas que revelam onde seu produto está e o caminho real para conformidade WCAG. <a href="#"
+          >Saiba mais</a
+        >
+      </Feature>
+      <Feature icon="lucide:code" title="Desenvolvimento Acessível">
+        Sites e interfaces construídos desde a arquitetura da informação até o código. <a href="#">Saiba mais</a>
+      </Feature>
+      <Feature icon="lucide:file" title="Remediação de Documentos">
+        PDFs, planilhas e apresentações acessíveis para qualquer recurso assistivo. <a href="#">Saiba mais</a>
+      </Feature>
+      <Feature icon="lucide:paintbrush" title="Treinamentos e Palestras">
+        Capacitação prática para equipes de design e desenvolvimento. Também falo em eventos sobre acessibilidade e
+        padrões web. <a href="#">Saiba mais</a>
+      </Feature>
+      <Feature icon="lucide:sparkles" title="Coaching e Mentoria">
+        Acompanhamento personalizado para profissionais e líderes que querem fazer da acessibilidade parte do seu DNA.
+        <a href="#">Saiba mais</a>
+      </Feature>
+      <Feature icon="lucide:code" title="Consultoria Estratégica">
+        Acessibilidade como parte da estratégia do negócio — não como correção tardia de código. <a href="#"
+          >Saiba mais</a
+        >
+      </Feature>
+    </div>
+
+    <div class="services__cta">
+      <Link href="/servicos/" isButton animateOnHover animationType="nudge"> Ver todos os serviços </Link>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .services__cta {
+    padding-block-start: 2rem;
+  }
+</style>

@@ -5,11 +5,11 @@ import { Form, Input, Button, Textarea, Checkbox, Fieldset, Heading, Link, Radio
 import { Icon } from 'astro-icon/components'
 ---
 
-<DefaultLayout title="Contact">
-  <PageHeader title="Contact" subtitle="Have a question? Get in touch with us!" bgType="gradient" />
+<DefaultLayout title="Contato">
+  <PageHeader title="Contato" subtitle="Have a question? Get in touch with us!" bgType="gradient" />
   <section class="my-16">
     <div class="container">
-      <Heading level="h2">Let's talk</Heading>
+      <Heading level="h2">Vamos conversar</Heading>
     </div>
   </section>
   <section class="container">
@@ -19,16 +19,16 @@ import { Icon } from 'astro-icon/components'
           <!-- Input field with custom validation message -->
           <Input
             name="firstname"
-            label="First name"
+            label="Nome"
             required
             data-validation="We need your first name to address you correctly"
             autocomplete="given-name"
           />
 
-          <Input name="email" label="Email address" type="email" required autocomplete="email" />
+          <Input name="email" label="E-mail" type="email" required autocomplete="email" />
 
           <!-- Custom validation with pattern -->
-          <Input name="phone" label="Phone number" type="tel" required data-validation-pattern="^[0-9]{10}$" />
+          <Input name="phone" label="Telefone" type="tel" required data-validation-pattern="^[0-9]{10}$" />
 
           <Textarea name="message" label="Message" required />
 

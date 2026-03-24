@@ -56,7 +56,7 @@ const imagePath = image ? (typeof image === 'string' ? image : image.src) : '/so
 const imageUrl = new URL(imagePath, Astro.site).href
 ---
 
-<html lang="en" dir="ltr">
+<html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -130,6 +130,7 @@ const imageUrl = new URL(imagePath, Astro.site).href
       // sticky footer on low content pages
       html,
       body {
+        background: #fff;
         height: 100%;
       }
 

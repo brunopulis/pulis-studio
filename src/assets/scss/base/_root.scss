@@ -3,42 +3,68 @@
   interpolate-size: allow-keywords;
 
   // brand colors (change these to your own brand colors)
-  --brand-primary: #d648ff;
-  --brand-secondary: #00d1b7;
-  --brand-neutral: #b9bec4;
-  --brand-outline: #ff4500;
+  --brand-primary: #ffffff;
+  --brand-rosewood: #610404;
+  --brand-aztec: #171e1e;
+  --brand-neutral: #d9d9d9;
+  --brand-portage: #849cdb;
 
   // pallet brand
-  --color-primary-100: oklch(from var(--brand-primary) 90% c h);
-  --color-primary-200: oklch(from var(--brand-primary) 80% c h);
-  --color-primary-300: oklch(from var(--brand-primary) 70% c h);
-  --color-primary-400: oklch(from var(--brand-primary) 60% c h);
-  --color-primary-500: oklch(from var(--brand-primary) 50% c h);
-  --color-secondary-100: oklch(from var(--brand-secondary) 90% c h);
-  --color-secondary-200: oklch(from var(--brand-secondary) 80% c h);
-  --color-secondary-300: oklch(from var(--brand-secondary) 70% c h);
-  --color-secondary-400: oklch(from var(--brand-secondary) 60% c h);
-  --color-secondary-500: oklch(from var(--brand-secondary) 50% c h);
-  --color-outline-100: oklch(from var(--brand-outline) 80% c h);
-  --color-outline-200: oklch(from var(--brand-outline) 50% c h);
+  --color-rosewood-50: #fff1f1;
+  --color-rosewood-100: #ffdfdf;
+  --color-rosewood-200: #ffc4c4;
+  --color-rosewood-300: #ff9b9b;
+  --color-rosewood-400: #ff6161;
+  --color-rosewood-500: #ff3030;
+  --color-rosewood-600: #f11111;
+  --color-rosewood-700: #cb0a0a;
+  --color-rosewood-800: #a80c0c;
+  --color-rosewood-900: #8a1212;
+  --color-rosewood-950: #610404;
+
+  --color-portage-50: #f1f6fc;
+  --color-portage-100: #e5effa;
+  --color-portage-200: #d0e1f5;
+  --color-portage-300: #b4cced;
+  --color-portage-400: #96b1e3;
+  --color-portage-500: #849cdb;
+  --color-portage-600: #6176ca;
+  --color-portage-700: #5162b1;
+  --color-portage-800: #44538f;
+  --color-portage-900: #3c4873;
+  --color-portage-950: #232943;
 
   // pallet neutral
-  --color-neutral-100: oklch(from var(--brand-neutral) 100% 0 0);
-  --color-neutral-200: oklch(from var(--brand-neutral) 95% c h);
-  --color-neutral-300: oklch(from var(--brand-neutral) 90% c h);
-  --color-neutral-400: oklch(from var(--brand-neutral) 85% c h);
-  --color-neutral-500: oklch(from var(--brand-neutral) 80% c h);
-  --color-neutral-600: oklch(from var(--brand-neutral) 60% c h);
-  --color-neutral-700: oklch(from var(--brand-neutral) 40% c h);
-  --color-neutral-800: oklch(from var(--brand-neutral) 30% c h);
-  --color-neutral-900: oklch(from var(--brand-neutral) 15% c h);
+  --color-aztec-50: #fafafa;
+  --color-aztec-100: #f3f6f6;
+  --color-aztec-200: #e2e9e9;
+  --color-aztec-300: #d2dada;
+  --color-aztec-400: #9bb0b0;
+  --color-aztec-500: #6b8080;
+  --color-aztec-600: #4c6161;
+  --color-aztec-700: #3b4a4a;
+  --color-aztec-800: #252c2c;
+  --color-aztec-900: #171e1e;
+  --color-aztec-950: #080c0c;
+
+  --color-alto-50: #fafafa;
+  --color-alto-100: #f5f5f5;
+  --color-alto-200: #e6e6e6;
+  --color-alto-300: #d9d9d9;
+  --color-alto-400: #a3a3a3;
+  --color-alto-500: #727272;
+  --color-alto-600: #535353;
+  --color-alto-700: #404040;
+  --color-alto-800: #272727;
+  --color-alto-900: #1a1a1a;
+  --color-alto-950: #0b0b0b;
 
   // color scheme
   --foreground-color: light-dark(var(--color-neutral-800), var(--color-neutral-100));
   --background-color: light-dark(var(--color-neutral-100), var(--color-neutral-900));
   --icon-color: light-dark(var(--color-neutral-800), var(--color-neutral-100));
-  --link-color: light-dark(var(--color-primary-400), var(--color-secondary-100));
-  --link-hover-color: light-dark(var(--color-primary-300), var(--color-secondary-200));
+  --link-color: light-dark(var(--color-rosewood-400), var(--color-aztec-100));
+  --link-hover-color: light-dark(var(--color-rosewood-300), var(--color-aztec-200));
   --border-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
   --border-color-subtle: light-dark(var(--color-neutral-300), var(--color-neutral-800));
   --text-decoration-color: light-dark(var(--color-neutral-700), var(--color-neutral-100));
@@ -50,8 +76,8 @@
   --radius-large: 6px;
   --gap-default: 2rem;
   --font-measure: 70ch;
-  --font-family-default: 'Atkinson Hyperlegible', sans-serif;
-  --font-family-special: 'Atkinson Hyperlegible', sans-serif;
+  --font-family-default: 'Source Sans 3', sans-serif;
+  --font-family-special: 'Noto Sans', Georgia, serif;
 
   // font families
   --font-heading: var(--font-family-special);

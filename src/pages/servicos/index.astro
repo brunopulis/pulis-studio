@@ -1,0 +1,39 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import ServicesGrid from '@components/ServicesGrid.astro'
+import { Heading } from 'accessible-astro-components'
+---
+
+<DefaultLayout title="Serviços - Pulis Studio" useTitleTemplate={false}>
+  <PageHeader
+    title="Serviços"
+    subtitle="Ajudo organizações a tornarem seus produtos digitais, processos e cultura mais acessível e usável."
+    bgType="bordered"
+  />
+  <section class="my-12">
+    <div class="container">
+      <Heading level="h2" class="mb-8">Como posso te ajudar</Heading>
+      <ServicesGrid />
+
+      <section class="py-24">
+        <div class="container max-w-3xl text-center">
+          <Heading level="h2" class="mb-6">Precisa de algo personalizado?</Heading>
+          <p class="mb-8 text-lg text-[var(--text-color-secondary)]">
+            Desenvolvemos soluções sob medida para as necessidades do seu projeto. Entre em contato para discutirmos
+            como podemos ajudar.
+          </p>
+          <a
+            href="/contact"
+            class="bg-accent hover:bg-accent/90 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold text-white transition-all hover:shadow-lg"
+          >
+            Fale Conosco
+            <svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+  </section>
+</DefaultLayout>
