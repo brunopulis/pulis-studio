@@ -157,3 +157,54 @@ Examples:
 - **Module not found**: Run `rm -rf node_modules && pnpm install`
 - **Build failures**: Clear cache `rm -rf node_modules/.astro node_modules/.vite`
 - **ESLint errors**: Check `.eslintrc.js` for current rules
+
+## Release Process (Git Flow + Vercel)
+
+### Workflow
+
+1. **Merge** feature branches → `develop`
+2. **Merge** `develop` → `main`
+3. **Create tag** `v*.*.*` → triggers automatic workflow
+
+### Creating a Release
+
+```bash
+# Interactive release (recommended)
+npm run release
+
+# Preview release without making changes
+npm run release:dry
+
+# Or manually
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+### Automatic Workflow (`.github/workflows/release.yml`)
+
+When a tag `v*.*.*` is pushed:
+
+1. Checkout + setup Node.js
+2. `npm ci` - install dependencies
+3. `npm run lint` - ESLint check
+4. `npx tsc --noEmit` - TypeScript check
+5. `npm run build` - production build
+6. `git-cliff` - generates CHANGELOG.md
+7. **GitHub Release** created with changelog
+8. **Vercel deploy** to production
+
+### Required Secrets
+
+Configure in GitHub repo Settings → Secrets:
+
+- `VERCEL_TOKEN` - Vercel API token
+- `VERCEL_ORG_ID` - Organization ID
+- `VERCEL_PROJECT_ID` - Project ID
+
+### Version Bumping
+
+Use [bumpp](https://github.com/antfu/bumpp) for interactive version bumps:
+
+- **patch**: Bug fixes (1.0.0 → 1.0.1)
+- **minor**: New features (1.0.0 → 1.1.0)
+- **major**: Breaking changes (1.0.0 → 2.0.0)

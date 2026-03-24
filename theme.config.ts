@@ -3,7 +3,7 @@ import previewImage from '@assets/img/social-preview-image.png'
 import logoImage from '@assets/img/logo.svg'
 
 export default defineThemeConfig({
-  name: 'Accessible Astro',
+  name: 'Bruno Pulis',
   id: 'accessible-astro-starter',
   logo: logoImage,
   seo: {
@@ -14,28 +14,28 @@ export default defineThemeConfig({
     image: previewImage, // Can also be a string e.g. '/social-preview-image.png',
   },
   colors: {
-    primary: '#d648ff',
+    primary: '#610404',
     secondary: '#00d1b7',
     neutral: '#b9bec4',
     outline: '#ff4500',
   },
   navigation: {
-    darkmode: true,
+    darkmode: false,
     items: [
       {
         type: 'link',
-        label: 'Home',
-        href: '/',
-      },
-      {
-        type: 'link',
-        label: 'Blog',
-        href: '/blog',
+        label: 'Serviços',
+        href: '/servicos',
       },
       {
         type: 'link',
         label: 'Portfolio',
         href: '/portfolio',
+      },
+      {
+        type: 'link',
+        label: 'Palestras',
+        href: '/palestras',
       },
       {
         label: 'Features',
@@ -77,16 +77,8 @@ export default defineThemeConfig({
       },
       {
         type: 'link',
-        label: 'Contact',
-        href: '/contact',
-      },
-      {
-        type: 'link',
-        label: 'Go to our GitHub page, opens in new tab',
-        href: 'https://github.com/incluud/accessible-astro-starter',
-        icon: 'lucide:github',
-        external: true,
-        excludeFromLauncher: true,
+        label: 'Contato',
+        href: '/contato',
       },
     ],
   },
