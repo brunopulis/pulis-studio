@@ -1,7 +1,7 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro'
 import PageHeader from '@components/PageHeader.astro'
-import ServicesGrid from '@components/ServicesGrid.astro'
+import Feature from '@components/Feature.astro'
 import { Heading } from 'accessible-astro-components'
 ---
 
@@ -14,7 +14,37 @@ import { Heading } from 'accessible-astro-components'
   <section class="my-12">
     <div class="container">
       <Heading level="h2" class="mb-8">Como posso te ajudar</Heading>
-      <ServicesGrid />
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="lucide:accessibility" title="Diagnóstico e auditoria">
+          Avaliações focadas que revelam onde seu produto está e o caminho real para conformidade WCAG. <a href="#"
+            >Saiba mais</a
+          >
+        </Feature>
+        <Feature icon="lucide:code" title="Sites acessíveis">
+          Sites e interfaces construídos desde a arquitetura da informação até o código. <a href="#">Saiba mais</a>
+        </Feature>
+        <Feature icon="lucide:file" title="Remediação de Documentos">
+          PDFs, planilhas e apresentações acessíveis para qualquer recurso assistivo. <a href="#">Saiba mais</a>
+        </Feature>
+        <Feature icon="lucide:paintbrush" title="Treinamentos e Palestras">
+          Capacitação prática para equipes de design e desenvolvimento. Também falo em eventos sobre acessibilidade e
+          padrões web. <a href="#">Saiba mais</a>
+        </Feature>
+        <Feature icon="lucide:sparkles" title="Coaching e Mentoria">
+          Acompanhamento personalizado para profissionais e líderes que querem fazer da acessibilidade parte do seu DNA.
+          <a href="#">Saiba mais</a>
+        </Feature>
+        <Feature icon="lucide:code" title="Consultoria Estratégica">
+          Acessibilidade como parte da estratégia do negócio — não como correção tardia de código. <a href="#"
+            >Saiba mais</a
+          >
+        </Feature>
+        <Feature icon="lucide:shield-check" title="Selo CPA">
+          Consultoria completa para adquirir o selo de acessibilidade digital da Prefeitura de São Paulo. <a href="#"
+            >Saiba mais</a
+          >
+        </Feature>
+      </div>
 
       <section class="py-24">
         <div class="container max-w-3xl text-center">

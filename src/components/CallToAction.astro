@@ -26,32 +26,39 @@ interface Props {
 }
 
 const {
-  title = 'Tem um projeto em mente?',
+  title = 'Pronto para tornar seu produto',
   link = 'https://github.com/incluud/accessible-astro-starter',
   linkText = ' Me manda um e-mail. Sem formulário, sem funil de vendas — só uma conversa direta sobre como posso ajudar. ',
 } = Astro.props
 ---
 
-<div class="container">
-  <div class="bg-rosewood-950 mt-24 mb-32 flex flex-col items-center gap-12 rounded-xl px-12 py-20 md:px-24">
-    <Heading level="h2" class="text-center text-3xl md:text-6xl">{title}</Heading>
-    <Link href={link} isButton size="lg" animateOnHover animationType="nudge">
-      {linkText}
-      <Icon aria-hidden="true" name="lucide:rocket" size="1.5rem" />
+<section class="bg-aztec-900 px-8 py-32 text-white">
+  <div class="mx-auto max-w-7xl text-center">
+    <p class="text-portage-500 mb-6 text-sm font-bold tracking-[0.15em] uppercase">Vamos dialogar</p>
+    <Heading level="h2" class="mx-auto mb-12 max-w-4xl text-5xl leading-tight md:text-6xl">
+      {title}
+      <span class="text-portage-500">verdadeiramente</span> universal?
+    </Heading>
+    <Link
+      isButton
+      class="border-brand-red hover:text-vista-blue inline-flex items-center gap-4 border-b-2 pb-2 font-serif text-3xl text-white transition-colors md:text-4xl"
+      href="/contato"
+    >
+      Entrar em contato
     </Link>
+    <div class="mx-auto mt-24 grid max-w-4xl gap-12 text-left opacity-60 md:grid-cols-3">
+      <div>
+        <span class="mb-2 block text-xs font-bold tracking-widest uppercase">Localização</span>
+        <p class="font-light">Belo Horizonte, Brasil</p>
+      </div>
+      <div>
+        <span class="mb-2 block text-xs font-bold tracking-widest uppercase">Disponibilidade</span>
+        <p class="font-light">Indisponível até dia 17/04</p>
+      </div>
+      <div>
+        <span class="mb-2 block text-xs font-bold tracking-widest uppercase">Redes Socais</span>
+        <p class="font-light">LinkedIn / GitHub</p>
+      </div>
+    </div>
   </div>
-</div>
-
-<style lang="scss">
-  @use '../assets/scss/base/mixins' as *;
-
-  .call-to-action {
-    position: relative;
-    background-image: linear-gradient(
-      315deg,
-      light-dark(var(--color-primary-100), var(--color-secondary-100)) 25%,
-      light-dark(var(--color-secondary-100), var(--color-primary-200))
-    );
-    color: var(--color-neutral-900);
-  }
-</style>
+</section>

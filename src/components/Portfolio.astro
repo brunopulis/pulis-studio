@@ -1,4 +1,5 @@
 ---
+import { ChevronRight } from '@lucide/astro'
 import { Card, Heading, Link } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 import { getCollection } from 'astro:content'
@@ -43,9 +44,19 @@ const featuredProjects = projects.slice(0, limit).map((project, index) => ({
 }))
 ---
 
-<section class:list={[className, 'my-24']}>
-  <div class="container">
-    <Heading level="h2" class="mb-6">{title}</Heading>
+<section class="bg-surface-container-high px-8 py-24">
+  <div class="mx-auto max-w-7xl">
+    <div class="mb-16 flex flex-col items-end justify-between gap-8 md:flex-row">
+      <div class="max-w-xl">
+        <p class="text-vista-blue mb-4 text-sm font-bold tracking-[0.15em] uppercase">RESULTADOS</p>
+        <h2 class="font-serif text-4xl">Projetos que definem o <span class="text-brand-red italic">padrão.</span></h2>
+      </div>
+      <a class="group text-brand-red flex items-center gap-2 font-bold" href="#">
+        Ver portfólio completo
+        <ChevronRight class="transition-transform group-hover:translate-x-1" aria-hidden="true" />
+      </a>
+    </div>
+
     <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
       {
         featuredProjects.map((project) => (
@@ -54,14 +65,14 @@ const featuredProjects = projects.slice(0, limit).map((project, index) => ({
             url={'/portfolio/' + project.id}
             headingLevel="h2"
             title={project.data.title}
-            footer={'Author: ' + project.data.author}
+            footer={'Autor: ' + project.data.author}
           >
             {project.data.description}
           </Card>
         ))
       }
     </div>
-    <div class="mt-12">
+    <div class="mx-auto mt-12 justify-center">
       <Link href="/portfolio/" isButton animateOnHover animationType="nudge">
         Ver todos os projetos
         <Icon aria-hidden="true" name="lucide:arrow-right" size="1.5rem" />

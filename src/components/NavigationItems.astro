@@ -50,7 +50,7 @@ import { Icon } from 'astro-icon/components'
   }
   {
     themeConfig.navigation.darkmode && (
-      <li class="menu-item type-icon animate-rotate">
+      <li class="animate-rotate menu-item type-icon">
         <DarkMode>
           <Icon aria-hidden="true" name="lucide:moon" slot="light" />
           <Icon aria-hidden="true" name="lucide:sun" slot="dark" />
@@ -58,7 +58,4 @@ import { Icon } from 'astro-icon/components'
       </li>
     )
   }
-  <li class="menu-item desktop-launcher">
-    <LauncherTrigger launcherId="site-launcher" compact={true} gradientBorder={true} />
-  </li>
 </ul>

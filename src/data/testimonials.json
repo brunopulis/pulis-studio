@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Maria Silva",
+    "role": "CTO na TechCorp",
+    "content": "O trabalho de acessibilidade transformou completamente nosso produto. Agora podemos atender todos os nossos usuários sem exceção.",
+    "avatar": "/testimonials/avatar-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "João Santos",
+    "role": "Product Manager na StartupX",
+    "content": "Profissional excepcional.",
+    "avatar": "/testimonials/avatar-2.jpg"
+  }
+]

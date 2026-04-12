@@ -3,44 +3,55 @@ import { Link } from 'accessible-astro-components'
 import Feature from '@components/Feature.astro'
 ---
 
-<section class="services my-24" id="servicos" aria-labelledby="services-heading">
-  <div class="container">
-    <p class="mb-6">Do diagnóstico à cultura da equipe — atuo em toda a jornada de acessibilidade.</p>
-    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-      <Feature icon="lucide:accessibility" title="Diagnóstico e auditoria">
-        Avaliações focadas que revelam onde seu produto está e o caminho real para conformidade WCAG. <a href="#"
-          >Saiba mais</a
-        >
+<section class="bg-rosewood-950 border-rosewood-900 px-8 py-24 text-white">
+  <div class="mx-auto max-w-7xl">
+    <div class="mb-16">
+      <p class="text-portage-500 mb-4 text-sm font-bold tracking-[0.15em] uppercase">Como posso ajudar</p>
+      <h2 class="font-serif text-4xl md:text-5xl">Meus serviços</h2>
+    </div>
+    <div class="grid gap-1 md:grid-cols-3">
+      <Feature icon="lucide:gauge" title="Diagnóstico & Auditoria">
+        <p class="leading-relaxed text-white">
+          Análise técnica profunda baseada nas heurísticas da WCAG 2.2 para identificar e catalogar barreiras de
+          acessibilidade.
+        </p>
       </Feature>
-      <Feature icon="lucide:code" title="Desenvolvimento Acessível">
-        Sites e interfaces construídos desde a arquitetura da informação até o código. <a href="#">Saiba mais</a>
+      <Feature icon="lucide:code" title="Desenvolvimento acessível">
+        <p class="leading-relaxed text-white">
+          Implementação de componentes front-end robustos utilizando WAI-ARIA e semântica nativa de alto desempenho.
+        </p>
       </Feature>
-      <Feature icon="lucide:file" title="Remediação de Documentos">
-        PDFs, planilhas e apresentações acessíveis para qualquer recurso assistivo. <a href="#">Saiba mais</a>
+      <Feature icon="lucide:files" title="Documentos acessíveis">
+        <p class="leading-relaxed text-white">
+          Adaptação de documento digitais para compatibilidade total com leitores de tela e tecnologias assistivas.
+        </p>
       </Feature>
-      <Feature icon="lucide:paintbrush" title="Treinamentos e Palestras">
-        Capacitação prática para equipes de design e desenvolvimento. Também falo em eventos sobre acessibilidade e
-        padrões web. <a href="#">Saiba mais</a>
+      <Feature icon="lucide:presentation" title="Treinamentos e Palestras">
+        <p class="leading-relaxed text-white">
+          Capacitação técnica para times de design e engenharia sobre cultura inclusiva e padrões técnicos de
+          implementação.
+        </p>
       </Feature>
-      <Feature icon="lucide:sparkles" title="Coaching e Mentoria">
-        Acompanhamento personalizado para profissionais e líderes que querem fazer da acessibilidade parte do seu DNA.
-        <a href="#">Saiba mais</a>
+
+      <Feature icon="lucide:presentation" title="Coaching e Mentoria">
+        <p class="leading-relaxed text-white">
+          Acompanhamento individual para desenvolvedores que buscam elevar o nível de acessibilidade em seus projetos.
+        </p>
       </Feature>
-      <Feature icon="lucide:code" title="Consultoria Estratégica">
-        Acessibilidade como parte da estratégia do negócio — não como correção tardia de código. <a href="#"
-          >Saiba mais</a
-        >
+
+      <Feature icon="lucide:target" title="Consultoria Selo CPA">
+        <p class="leading-relaxed text-white">
+          Consultoria de ponta a ponta para obtenção do Selo de Acessibilidade da Prefeitura de São Paulo.
+        </p>
       </Feature>
     </div>
-
-    <div class="services__cta">
-      <Link href="/servicos/" isButton animateOnHover animationType="nudge"> Ver todos os serviços </Link>
+    <div class="services__cta mx-auto my-6 flex justify-center">
+      <Link
+        href="/servicos/"
+        class="focus:ring-portage-500 text-brand-red rounded-lg border border-zinc-300 px-8 py-3 font-bold transition-all hover:bg-zinc-50 focus:ring-2 focus:ring-offset-2"
+      >
+        Ver todos os serviços
+      </Link>
     </div>
   </div>
 </section>
-
-<style lang="scss">
-  .services__cta {
-    padding-block-start: 2rem;
-  }
-</style>

@@ -1,13 +1,15 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro'
 
-import { Heading, Link } from 'accessible-astro-components'
 import Hero from '@components/Hero.astro'
 import About from '@components/About.astro'
+import SocialProof from '@components/SocialProof.astro'
 import ServicesGrid from '@components/ServicesGrid.astro'
+import Investment from '@components/Investment.astro'
 import Process from '@components/Process.astro'
-import ContentMedia from '@components/ContentMedia.astro'
+import Portfolio from '@components/Portfolio.astro'
 import FeaturedProjects from '@components/FeaturedProjects.astro'
+import Testimonials from '@components/Testimonials.astro'
 ---
 
 <DefaultLayout
@@ -16,104 +18,11 @@ import FeaturedProjects from '@components/FeaturedProjects.astro'
 >
   <Hero />
   <About />
+  <SocialProof />
   <ServicesGrid />
   <Process />
+  <Portfolio />
+  <Investment />
+  <Testimonials />
   <FeaturedProjects />
-  <section class="portfolio" aria-labelledby="portfolio-heading">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Trabalhos selecionados</p>
-          <h2 id="portfolio-heading" class="section-title">Portfólio</h2>
-        </div>
-        <a href="/portfolio" class="link-arrow">
-          Ver portfólio completo
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path
-              d="M3 8h10M9 4l4 4-4 4"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path>
-          </svg>
-        </a>
-      </div>
-      <ul class="portfolio__list" role="list">
-        <li>
-          <article class="portfolio-item" aria-labelledby="proj-1">
-            <div class="portfolio-item__meta">
-              <span class="portfolio-item__tag">Web &amp; A11y</span>
-              <span class="portfolio-item__tag">WCAG 2.2 AA</span>
-            </div>
-            <h3 id="proj-1" class="portfolio-item__title">Reponto Recrutamento</h3>
-            <p>Redesign com foco em acessibilidade WCAG 2.2 AA.</p>
-            <a
-              href="https://reponto.com.br"
-              class="portfolio-item__link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ver projeto Reponto Recrutamento (abre em nova aba)">Ver projeto →</a
-            >
-          </article>
-        </li>
-        <li>
-          <article class="portfolio-item" aria-labelledby="proj-2">
-            <div class="portfolio-item__meta">
-              <span class="portfolio-item__tag">Web &amp; A11y</span>
-              <span class="portfolio-item__tag">WordPress · ARIA</span>
-            </div>
-            <h3 id="proj-2" class="portfolio-item__title">Mone de França</h3>
-            <p>Landing Page acessível.</p>
-            <a
-              href="https://monedefranca.com.br"
-              class="portfolio-item__link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ver projeto Mone de França (abre em nova aba)">Ver projeto →</a
-            >
-          </article>
-        </li>
-        <li>
-          <article class="portfolio-item" aria-labelledby="proj-3">
-            <div class="portfolio-item__meta">
-              <span class="portfolio-item__tag">Web &amp; A11y</span>
-              <span class="portfolio-item__tag">WordPress · ARIA</span>
-            </div>
-            <h3 id="proj-3" class="portfolio-item__title">João Kioshi</h3>
-            <p>Landing Page acessível.</p>
-            <a href="/portfolio#kioshi" class="portfolio-item__link" aria-label="Ver projeto João Kioshi"
-              >Ver projeto →</a
-            >
-          </article>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <Heading level="h2">Accessible components</Heading>
-    <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <Link
-        isExternal
-        href="https://github.com/incluud/accessible-astro-components">separate package</Link
-      >. They'll get you up and running in building an accessible solution for your visitors.
-    </p>
-  </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <Heading level="h2">WCAG 2.2 AA compliant</Heading>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia>
 </DefaultLayout>
-
-<style>
-  .avatar {
-    border: 1px solid var(--border-color-subtle);
-    border-radius: var(--radius-md);
-    padding: var(--space-s);
-  }
-</style>

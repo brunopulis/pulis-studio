@@ -20,7 +20,7 @@ import { Icon } from 'astro-icon/components'
           <Input
             name="firstname"
             label="Nome"
-            required
+            required="campo obrigatório"
             data-validation="We need your first name to address you correctly"
             autocomplete="given-name"
           />
@@ -30,7 +30,7 @@ import { Icon } from 'astro-icon/components'
           <!-- Custom validation with pattern -->
           <Input name="phone" label="Telefone" type="tel" required data-validation-pattern="^[0-9]{10}$" />
 
-          <Textarea name="message" label="Message" required />
+          <Textarea name="message" label="Mensagem" required />
 
           <!-- Checkbox group with validation -->
           <Fieldset
@@ -45,14 +45,7 @@ import { Icon } from 'astro-icon/components'
             <Checkbox name="keyboard-nav" value="keyboard" label="Keyboard navigation" />
           </Fieldset>
 
-          <!-- Radio group (shared names) -->
-          <Fieldset name="experience" legend="Your experience level" required>
-            <Radio name="experience" value="beginner" label="Beginner" />
-            <Radio name="experience" value="intermediate" label="Intermediate" />
-            <Radio name="experience" value="advanced" label="Advanced" />
-          </Fieldset>
-
-          <Button htmlType="submit" type="primary">Send Message</Button>
+          <Button htmlType="submit" type="primary">Enviar mensagem</Button>
         </Form>
       </div>
       <div class="space-content">
@@ -68,34 +61,26 @@ import { Icon } from 'astro-icon/components'
         </p>
 
         <div class="gap-2xs flex items-center">
-          <Icon aria-hidden="true" name="lucide:phone" size={20} class="flex-shrink-0" />
+          <Icon aria-hidden="true" name="lucide:phone" size={20} class="shrink-0" />
           <p>
-            <span class="font-bold">Phone:</span>
-            <Link href="tel:+12345678900">+1 (234) 567-8900</Link>
+            <span class="font-bold">Telefone:</span>
+            <Link href="tel:+5531973438008">+55 (31) 97343-800</Link>
           </p>
         </div>
 
         <div class="gap-2xs flex items-center">
-          <Icon aria-hidden="true" name="lucide:mail" size={20} class="flex-shrink-0" />
+          <Icon aria-hidden="true" name="lucide:mail" size={20} class="shrink-0" />
           <p>
             <span class="font-bold">Email:</span>
-            <Link href="mailto:hello@accessibleastro.dev">hello@accessibleastro.dev</Link>
+            <Link href="mailto:hello@brunopulis.com">hello@brunopulis.com</Link>
           </p>
         </div>
 
         <div class="gap-2xs flex items-center">
-          <Icon aria-hidden="true" name="lucide:map-pin" size={20} class="flex-shrink-0" />
-          <p>
-            <span class="font-bold">Address:</span>
-            123 Accessibility Lane, Web Standards City
-          </p>
-        </div>
-
-        <div class="gap-2xs flex items-center">
-          <Icon aria-hidden="true" name="lucide:clock" size={20} class="flex-shrink-0" />
+          <Icon aria-hidden="true" name="lucide:clock" size={20} class="shrink-0" />
           <p>
             <span class="font-bold">Business Hours:</span>
-            Monday - Friday, 9:00 AM - 5:00 PM EST
+            Segunda a Sexta, 9:00 AM - 5:00 PM Brasília
           </p>
         </div>
 

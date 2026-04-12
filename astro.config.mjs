@@ -31,6 +31,7 @@ const viteConfig = {
       '@project-images': fileURLToPath(new URL('./public/projects', import.meta.url)),
       '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
       '@theme-config': fileURLToPath(new URL('./theme.config.ts', import.meta.url)),
+      '@data': fileURLToPath(new URL('./src/data', import.meta.url)),
     },
   },
 }
@@ -38,7 +39,7 @@ const viteConfig = {
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  site: 'https://accessible-astro-starter.incluud.dev',
+  site: 'https://brunopulis.dev.br',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: enhanceConfigForWorkspace(viteConfig),
   env: {

@@ -2,3 +2,58 @@
 
 @source '../../src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}';
 @custom-variant dark (&:where(.darkmode, .darkmode *));
+
+@theme {
+  --color-rosewood-50: #fff1f1;
+  --color-rosewood-100: #ffdfdf;
+  --color-rosewood-200: #ffc4c4;
+  --color-rosewood-300: #ff9b9b;
+  --color-rosewood-400: #ff6161;
+  --color-rosewood-500: #ff3030;
+  --color-rosewood-600: #f11111;
+  --color-rosewood-700: #cb0a0a;
+  --color-rosewood-800: #a80c0c;
+  --color-rosewood-900: #8a1212;
+  --color-rosewood-950: #610404;
+
+  --color-portage-50: #f1f6fc;
+  --color-portage-100: #e5effa;
+  --color-portage-200: #d0e1f5;
+  --color-portage-300: #b4cced;
+  --color-portage-400: #96b1e3;
+  --color-portage-500: #849cdb;
+  --color-portage-600: #6176ca;
+  --color-portage-700: #5162b1;
+  --color-portage-800: #44538f;
+  --color-portage-900: #3c4873;
+  --color-portage-950: #232943;
+
+  /* pallet neutral */
+  --color-aztec-50: #fafafa;
+  --color-aztec-100: #f3f6f6;
+  --color-aztec-200: #e2e9e9;
+  --color-aztec-300: #d2dada;
+  --color-aztec-400: #9bb0b0;
+  --color-aztec-500: #6b8080;
+  --color-aztec-600: #4c6161;
+  --color-aztec-700: #3b4a4a;
+  --color-aztec-800: #252c2c;
+  --color-aztec-900: #171e1e;
+  --color-aztec-950: #080c0c;
+
+  --color-alto-50: #fafafa;
+  --color-alto-100: #f5f5f5;
+  --color-alto-200: #e6e6e6;
+  --color-alto-300: #d9d9d9;
+  --color-alto-400: #a3a3a3;
+  --color-alto-500: #727272;
+  --color-alto-600: #535353;
+  --color-alto-700: #404040;
+  --color-alto-800: #272727;
+  --color-alto-900: #1a1a1a;
+  --color-alto-950: #0b0b0b;
+}
+
+main {
+  background: #faf9f9;
+}
