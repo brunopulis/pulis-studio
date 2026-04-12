@@ -11,90 +11,95 @@ pageHeader:
 import { Notification, Link } from 'accessible-astro-components'
 
 <Notification type="info">
-  **Template notice:** This accessibility statement follows the [W3C WAI Accessibility
-  Statement](https://www.w3.org/WAI/planning/statements/) structure. Update the placeholder content (marked with
-  **[brackets]**) to reflect your own organization's practices.
+  Esta declaração de acessibilidade segue a estrutura da [Declaração de Acessibilidade WAI do
+  W3C](https://www.w3.org/WAI/planning/statements/). Atualize o conteúdo do espaço reservado (marcado com
+  **[colchetes]**) para refletir as práticas da sua organização.
 </Notification>
 
-At **[Organization Name]**, we believe that **[website/product name]** should be accessible to everyone, regardless of ability or circumstance. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+No [Pulis Studio](https://brunopulis.dev.br), acreditamos que nosso site e serviços devem ser acessível a todos, independentemente de suas habilidades ou circunstâncias. Estamos continuamente aprimorando a experiência do usuário para todos e aplicando os padrões de acessibilidade relevantes.
 
-## Measures to support accessibility
+## Medidas para garantir a acessibilidade
 
-**[Organization Name]** takes the following measures to ensure accessibility:
+A **[Nome da Organização]** adota as seguintes medidas para garantir a acessibilidade:
 
-- Include accessibility throughout our development process
-- Review accessibility in pull requests and code reviews
-- Maintain issues labeled <Link href="[link to a11y issues]">`a11y`</Link> to track accessibility work
-- Welcome and act on community accessibility feedback and audits
+- Incluir a acessibilidade em todo o nosso processo de desenvolvimento
+- Analisar a acessibilidade em solicitações de pull e revisões de código
+- Manter as tarefas marcadas com <Link href="[link para tarefas de acessibilidade]">`a11y`</Link> para acompanhar o trabalho de acessibilidade
+- Acolher e agir de acordo com o feedback e as auditorias de acessibilidade da comunidade
 
-## Conformance status
+## Status de conformidade
 
-The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.
+As [Diretrizes de Acessibilidade para Conteúdo Web (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) definem requisitos para que designers e desenvolvedores melhorem a acessibilidade para pessoas com deficiência. Elas definem três níveis de conformidade: Nível A, Nível AA e Nível AAA.
 
-**[Website/Product name]** is **partially conformant** with WCAG 2.2 level AA. Partially conformant means that some parts of the content do not fully conform to the accessibility standard.
+O **[Nome do Site/Produto]** está **parcialmente em conformidade** com o nível AA das WCAG 2.2. Conformidade parcial significa que algumas partes do conteúdo não estão totalmente em conformidade com o padrão de acessibilidade.
 
 ## Feedback
 
-We welcome your feedback on the accessibility of **[website/product name]**. Please let us know if you encounter accessibility barriers:
+Agradecemos seu feedback sobre a acessibilidade do **[nome do site/produto]**. Informe-nos caso encontre alguma barreira de acessibilidade:
 
-- **Email:** <Link href="mailto:[email]">[email]</Link>
-- **GitHub:** <Link href="[link to new issue]">Open an accessibility issue</Link>
-- **[Other channel]:** [Details]
+- **E-mail:** <Link href="mailto:hello@brunopulis.com">hello@brunopulis.com</Link>
+- **GitHub:** <Link href="[link para nova issue]">Abrir uma issue de acessibilidade</Link>
 
-We try to respond to accessibility feedback within **[X]** business days.
+Tentamos responder aos feedbacks sobre acessibilidade em até **[X]** dias úteis.
 
-## Technical specifications
+<Notification type="error">
+  Caso encontre algum erro crítico de acessibilidade, entre em contato imediatamente.
+</Notification>
 
-Accessibility of **[website/product name]** relies on the following technologies:
+## Especificações técnicas
+
+A acessibilidade de **brunopulis.dev.br** depende das seguintes tecnologias:
 
 - HTML
 - WAI-ARIA
 - CSS
 - JavaScript
 
-These technologies are used in combination with modern browsers and assistive technologies to provide an accessible experience.
+Essas tecnologias são usadas em conjunto com navegadores modernos e tecnologias assistivas para proporcionar uma experiência acessível.
 
-### Accessibility features
+### Recursos de acessibilidade
 
-**[Website/Product name]** includes the following accessibility features:
+**brunopulis.dev.br** inclui os seguintes recursos de acessibilidade:
 
-- **Skip link** to bypass navigation and jump to main content
-- **Logical heading hierarchy** for screen reader navigation
-- **Landmark regions** (`<header>`, `<nav>`, `<main>`, `<footer>`) for assistive technology navigation
-- **Full keyboard navigation** for all interactive elements
-- **Arrow key, Home, and End key support** for tab components
-- **Escape key** closes modals and menus with proper focus management
-- **Color contrast** meeting WCAG AA requirements
-- **Dark and light themes** with user preference support
-- **Responsive design** adapting to different viewport sizes
-- **Visible focus indicators** for keyboard navigation
-- **Reduced motion support** respecting user preferences
-- **ARIA attributes** throughout components
-- **Screen reader labels** for interactive elements
-- **Language attributes** for proper pronunciation
-- **Semantic HTML** for meaningful structure
-- **Form validation** with clear error identification and suggestions
-- **Text alternatives** for non-text content
+- **Link de pular** para ignorar a navegação e ir direto ao conteúdo principal
+- **Hierarquia lógica de títulos** para navegação com leitores de tela
+- **Regiões de referência** (`<header>`, `<nav>`, `<main>`, `<footer>`) para navegação com tecnologias assistivas
+- **Navegação completa por teclado** para todos os elementos interativos
+- **Suporte às teclas de seta, Home e End** para componentes de abas
+- **Tecla Escape** fecha modais e menus com gerenciamento de foco adequado
+- **Contraste de cores** em conformidade com os requisitos WCAG AA
+- **Temas claro e escuro** com suporte às preferências do usuário
+- **Design responsivo** adaptando-se a diferentes tamanhos de tela
+- **Indicadores de foco visíveis** para navegação por teclado
+- **Suporte a movimento reduzido** respeitando as preferências do usuário
+- **Atributos ARIA** em todos os componentes
+- **Rótulos de leitor de tela** para elementos interativos
+- **Atributos de idioma** para pronúncia correta
+- **HTML semântico** para significado Estrutura
+- **Validação de formulário** com identificação clara de erros e sugestões
+- **Alternativas de texto** para conteúdo não textual
 
-## Limitations and alternatives
+## Limitações e alternativas
 
-Despite our best efforts to ensure accessibility of **[website/product name]**, there may be some limitations. Known limitations are tracked in <Link href="[link to a11y issues]">issues labeled `a11y` on GitHub</Link>.
+Apesar de nossos melhores esforços para garantir a acessibilidade do **[nome do site/produto]**, podem existir algumas limitações. As limitações conhecidas são registradas em <Link href="[link para problemas de acessibilidade]">problemas com a etiqueta `a11y` no GitHub</Link>.
 
-Please [contact us](#feedback) if you encounter an issue not listed there.
+Entre em contato conosco caso encontre algum problema que não esteja listado lá.
 
-## Assessment approach
+Por favor, [entre em contato conosco](#feedback) caso encontre algum problema que não esteja listado lá.
 
-**[Organization Name]** assesses accessibility through the following approaches:
+## Abordagem de avaliação
 
-- Self-evaluation by maintainers
-- Community accessibility audits
-- Automated testing with tools like axe, WAVE, and Lighthouse
-- Manual testing with screen readers (VoiceOver, NVDA, JAWS)
-- Keyboard-only navigation testing
+A **[Nome da Organização]** avalia a acessibilidade por meio das seguintes abordagens:
+
+- Autoavaliação pelos mantenedores
+- Auditorias de acessibilidade da comunidade
+- Testes automatizados com ferramentas como axe, WAVE e Lighthouse
+- Testes manuais com leitores de tela (VoiceOver, NVDA, JAWS)
+- Testes de navegação somente por teclado
 
 ---
 
 <p class="text-sm">
-  This statement was created on **[date]** and last updated on **[date]** using the [W3C Accessibility Statement
-  Generator Tool](https://www.w3.org/WAI/planning/statements/generator/).
+  Esta declaração foi criada em **[data]** e atualizada pela última vez em **[data]** usando a [Ferramenta Geradora de
+  Declarações de Acessibilidade do W3C](https://www.w3.org/WAI/planning/statements/generator/).
 </p>
