@@ -3,67 +3,183 @@ import DefaultLayout from '@layouts/DefaultLayout.astro'
 import PageHeader from '@components/PageHeader.astro'
 import Feature from '@components/Feature.astro'
 import { Heading } from 'accessible-astro-components'
+import {
+  FastForward,
+  ShieldCheck,
+  Brain,
+  Code,
+  Files,
+  FileBadge,
+  Target,
+  Presentation,
+  ChevronRight,
+} from '@lucide/astro'
 ---
 
 <DefaultLayout title="Serviços - Pulis Studio" useTitleTemplate={false}>
   <PageHeader
-    title="Serviços"
-    subtitle="Ajudo organizações a tornarem seus produtos digitais, processos e cultura mais acessível e usável."
+    title="Excelência em acessibilidade digital"
+    subtitle=" Consultoria especializada para transformar produtos digitais em experiências inclusivas, em conformidade com as diretrizes internacionais e focado no usuário final. "
     bgType="bordered"
+    class="text-rosewood-950"
   />
-  <section class="my-12">
-    <div class="container">
-      <Heading level="h2" class="mb-8">Como posso te ajudar</Heading>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="lucide:accessibility" title="Diagnóstico e auditoria">
-          Avaliações focadas que revelam onde seu produto está e o caminho real para conformidade WCAG. <a href="#"
-            >Saiba mais</a
-          >
-        </Feature>
-        <Feature icon="lucide:code" title="Sites acessíveis">
-          Sites e interfaces construídos desde a arquitetura da informação até o código. <a href="#">Saiba mais</a>
-        </Feature>
-        <Feature icon="lucide:file" title="Remediação de Documentos">
-          PDFs, planilhas e apresentações acessíveis para qualquer recurso assistivo. <a href="#">Saiba mais</a>
-        </Feature>
-        <Feature icon="lucide:paintbrush" title="Treinamentos e Palestras">
-          Capacitação prática para equipes de design e desenvolvimento. Também falo em eventos sobre acessibilidade e
-          padrões web. <a href="#">Saiba mais</a>
-        </Feature>
-        <Feature icon="lucide:sparkles" title="Coaching e Mentoria">
-          Acompanhamento personalizado para profissionais e líderes que querem fazer da acessibilidade parte do seu DNA.
-          <a href="#">Saiba mais</a>
-        </Feature>
-        <Feature icon="lucide:code" title="Consultoria Estratégica">
-          Acessibilidade como parte da estratégia do negócio — não como correção tardia de código. <a href="#"
-            >Saiba mais</a
-          >
-        </Feature>
-        <Feature icon="lucide:shield-check" title="Selo CPA">
-          Consultoria completa para adquirir o selo de acessibilidade digital da Prefeitura de São Paulo. <a href="#"
-            >Saiba mais</a
-          >
-        </Feature>
-      </div>
 
-      <section class="py-24">
-        <div class="container max-w-3xl text-center">
-          <Heading level="h2" class="mb-6">Precisa de algo personalizado?</Heading>
-          <p class="mb-8 text-lg text-[var(--text-color-secondary)]">
-            Desenvolvemos soluções sob medida para as necessidades do seu projeto. Entre em contato para discutirmos
-            como podemos ajudar.
-          </p>
-          <a
-            href="/contact"
-            class="bg-accent hover:bg-accent/90 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold text-white transition-all hover:shadow-lg"
-          >
-            Fale Conosco
-            <svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </a>
+  <section class="mx-auto max-w-7xl px-8 pb-32">
+    <div class="grid grid-cols-1 gap-x-1 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Card 1 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low flex flex-col p-6 transition-colors duration-300"
+      >
+        <span class="text-rosewood-950 mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >01</span
+        >
+        <FastForward class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Auditoria rápida</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Identificação ágil dos principais bloqueios de acessibilidade para correções imediatas de alto impacto.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
         </div>
-      </section>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low border-outline-variant/15 flex flex-col border-l p-6 transition-colors duration-300"
+      >
+        <span class="text-rosewood-950 mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >02</span
+        >
+        <ShieldCheck class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Avaliação de acessibilidade</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Análise profunda baseada na WCAG 2.2, cobrindo aspectos técnicos e de experiência do usuário.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low border-outline-variant/15 flex flex-col border-l p-6 transition-colors duration-300"
+      >
+        <span class="text-rosewood-950 mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >03</span
+        >
+        <Brain class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Mentorias</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Acompanhamento individual ou em time para desenvolver maturidade em design e código inclusivo.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low border-outline-variant/15 flex flex-col border-l p-6 transition-colors duration-300"
+      >
+        <span class="text-rosewood-950 mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >04</span
+        >
+        <Code class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Desenvolvimento acessível</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Implementação de componentes robustos com foco em semântica HTML e suporte a tecnologias assistivas.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low flex flex-col p-6 transition-colors duration-300"
+      >
+        <span
+          class="bg-textsewood-950 text-primary mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >05</span
+        >
+        <Target class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Consultoria estratégica</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Integração da acessibilidade no roadmap do produto e na cultura organizacional de ponta a ponta.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low border-outline-variant/15 flex flex-col border-l p-6 transition-colors duration-300"
+      >
+        <span class="text-rosewood-950 mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >06</span
+        >
+        <Files class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Remediação de documentos</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Transformação de PDFs e documentos Office em arquivos totalmente navegáveis e acessíveis.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low border-outline-variant/15 flex flex-col border-l p-6 transition-colors duration-300"
+      >
+        <span class="text-rosewood-950 mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >07</span
+        >
+        <Presentation class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Treinamentos e Workshops</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Capacitação prática para desenvolvedores, designers e gestores sobre práticas modernas de inclusão.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div
+        class="group bg-surface-container-lowest hover:bg-surface-container-low border-outline-variant/15 flex flex-col border-l p-6 transition-colors duration-300"
+      >
+        <span
+          class="bg-textsewood-950 text-primary mb-6 text-4xl font-black opacity-20 transition-opacity group-hover:opacity-100"
+          >08</span
+        >
+        <FileBadge class="text-rosewood-950 mb-4" aria-hidden="true" />
+        <h3 class="text-rosewood-950 mb-4 text-xl font-bold tracking-tight">Consultoria selo CPA</h3>
+        <p class="text-secondary mb-6 text-sm leading-relaxed">
+          Preparação técnica completa para obtenção do Selo de Acessibilidade Digital da CPA/SMPED.
+        </p>
+        <div class="text-rosewood-950 mt-auto flex items-center gap-2 pt-4 text-xs font-bold tracking-widest uppercase">
+          <span>Ver detalhes</span>
+          <ChevronRight class="text-rosewood-950 text-sm!" aria-hidden="true" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-surface-container-low py-24">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-12 px-8 md:flex-row">
+      <div class="max-w-2xl">
+        <h2 class="text-primary mb-4 text-4xl font-black">Pronto para tornar seu projeto acessível?</h2>
+        <p class="text-secondary text-lg">
+          Vamos conversar sobre como aplicar as melhores práticas de inclusão no seu produto digital.
+        </p>
+      </div>
+      <button
+        class="bg-primary text-on-primary rounded px-12 py-5 text-lg font-bold transition-all hover:scale-[1.02] active:scale-95"
+      >
+        Iniciar Consultoria
+      </button>
     </div>
   </section>
 </DefaultLayout>
