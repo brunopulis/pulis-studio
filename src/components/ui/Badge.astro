@@ -1,0 +1,23 @@
+---
+interface Props {
+  text: string
+  variant?: 'default' | 'recommended' | 'primary'
+  class?: string
+}
+
+const { text, variant = 'default', class: className }: Props = Astro.props
+---
+
+<span
+  class:list={[
+    'font-bold text-[10px] uppercase tracking-widest px-4 py-1 rounded-full',
+    {
+      'bg-white text-rosewood-950': variant === 'recommended',
+      'bg-rosewood-950 text-white': variant === 'primary',
+      'bg-portage-500 text-white': variant === 'default',
+    },
+    className,
+  ]}
+>
+  {text}
+</span>

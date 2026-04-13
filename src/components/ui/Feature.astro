@@ -11,7 +11,7 @@ interface Props {
 const { icon = 'mdi:rocket', title = 'Title' }: Props = Astro.props
 ---
 
-<div class="group border-rosewood-950 cursor-default border bg-white/5 p-8 transition-all hover:bg-white/10">
+<article class="group border-rosewood-950 cursor-default border bg-white/5 p-8 transition-all hover:bg-white/10">
   <Icon aria-hidden="true" name={icon} class="text-portage-500 mb-6 size-8" />
   <div class="content">
     <Heading level="h3" size="h6" class="mb-2 font-bold">{title}</Heading>
@@ -19,4 +19,4 @@ const { icon = 'mdi:rocket', title = 'Title' }: Props = Astro.props
       <slot>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot>
     </p>
   </div>
-</div>
+</article>

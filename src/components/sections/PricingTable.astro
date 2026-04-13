@@ -1,0 +1,51 @@
+---
+import PricingCard from './PricingCard.astro'
+
+interface Feature {
+  text: string
+}
+
+interface PricingTier {
+  title: string
+  tier: 'bronze' | 'prata' | 'ouro'
+  price: string
+  description: string
+  features: Feature[]
+  recommended?: boolean
+}
+
+interface Props {
+  title?: string
+  subtitle?: string
+  tiers: PricingTier[]
+}
+
+const { title = 'Planos de Auditoria', subtitle, tiers = [] }: Props = Astro.props
+---
+
+<section aria-labelledby="pricing-title" class="bg-[#FAFAFA] px-8 py-24" id="pacotes">
+  <div class="mx-auto max-w-7xl">
+    <div class="flex md:flex-row flex-col justify-between items-end gap-4 mb-16">
+      <div class="space-y-4">
+        <span class="uppercase vista-blue-label">Estrutura de Investimento</span>
+        <h2 class="font-bold text-4xl md:text-5xl blood-red-text" id="pricing-title">
+          {title}
+        </h2>
+      </div>
+
+      {subtitle && (
+        <div class="text-right">
+          <p class="max-w-sm font-light text-on-surface-variant text-sm">
+            {subtitle}
+          </p>
+        </div>
+      )}
+    </div>
+
+    <div class="items-stretch gap-8 grid grid-cols-1 md:grid-cols-3">
+      {tiers.map((tier) => (
+        <PricingCard {...tier} />
+      ))}
+    </div>
+  </div>
+</section>

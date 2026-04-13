@@ -1,0 +1,33 @@
+---
+interface Props {
+  title?: string
+  description?: string
+  buttonText?: string
+}
+
+const { 
+  title = 'Arquitetura Sob Medida', 
+  description = 'Projetos complexos exigem escopos exclusivos. Se o seu ecossistema possui demandas singulares, desenhamos uma consultoria personalizada focada nos seus objetivos de negócio.',
+  buttonText = 'Solicitar Orçamento Personalizado'
+}: Props = Astro.props
+---
+
+<section aria-labelledby="custom-title" class="bg-rosewood-950 px-8 py-24">
+  <div class="space-y-8 mx-auto max-w-4xl text-center">
+    <span class="font-bold text-portage-500 uppercase">Necessidade específicas?</span>
+    <h2 class="font-bold text-white text-4xl md:text-5xl" id="custom-title">
+      {title}
+    </h2>
+    <p class="font-light text-white text-lg leading-relaxed">
+      {description}
+    </p>
+
+    <div class="pt-6">
+      <button 
+        class="focus-visible bg-[#610404] hover:opacity-90 shadow-xl px-10 py-5 rounded-lg font-bold text-white text-sm uppercase tracking-widest transition-all"
+      >
+        {buttonText}
+      </button>
+    </div>
+  </div>
+</section>

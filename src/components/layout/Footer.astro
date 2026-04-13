@@ -1,5 +1,5 @@
 ---
-import Logo from './Logo.astro'
+import Logo from '../ui/Logo.astro'
 import { Heading, Link } from 'accessible-astro-components'
 
 /**
@@ -57,16 +57,16 @@ const currentYear = new Date().getFullYear()
         <Heading level="h3" size="h6">Redes Sociais</Heading>
         <ul class="flex flex-col gap-2">
           <li>
-            <Link isExternal href="https://linkedin.com/in/pulis">LinkedIn</Link>
+            <Link isExternal rel="noopener noreferrer me" href="https://linkedin.com/in/pulis">LinkedIn</Link>
           </li>
           <li>
-            <Link isExternal href="https://speakerdeck.com/brunopulis">Speaker Deck</Link>
+            <Link isExternal rel="noopener noreferrer me" href="https://speakerdeck.com/brunopulis">Speaker Deck</Link>
           </li>
           <li>
-            <Link isExternal href="https://mastodon.social/@brunopulis">Mastodon</Link>
+            <Link isExternal rel="noopener noreferrer me" href="https://mastodon.social/@brunopulis">Mastodon</Link>
           </li>
           <li>
-            <Link isExternal href="https://bsky.app/profile/brunopulis.com">Bluesky</Link>
+            <Link isExternal rel="noopener noreferrer me" href="https://bsky.app/profile/brunopulis.com">Bluesky</Link>
           </li>
         </ul>
       </div>
