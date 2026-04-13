@@ -22,6 +22,9 @@ const viteConfig = {
   resolve: {
     alias: {
       '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '@ui': fileURLToPath(new URL('./src/components/ui', import.meta.url)),
+      '@sections': fileURLToPath(new URL('./src/components/sections', import.meta.url)),
+      '@features': fileURLToPath(new URL('./src/components/features', import.meta.url)),
       '@layouts': fileURLToPath(new URL('./src/layouts', import.meta.url)),
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@content': fileURLToPath(new URL('./src/content', import.meta.url)),
