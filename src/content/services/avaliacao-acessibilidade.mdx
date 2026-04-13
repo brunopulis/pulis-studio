@@ -1,0 +1,82 @@
+---
+title: Avaliação de Acessibilidade
+description: Revisão técnica do código-fonte identificando issues de acessibilidade e oportunidades de melhoria.
+icon: lucide:file-code
+price: 600
+category: Consultoria
+duration: 3-5 dias
+features:
+  - Análise de código-fonte
+  - Identificação de anti-patterns
+  - Sugestões de refatoração
+  - Relatório técnico
+  - Accompamento via Slack
+isPopular: false
+order: 4
+---
+
+import PageHeader from '@components/ui/PageHeader.astro'
+import PricingTable from '@components/sections/PricingTable.astro'
+import CustomPricing from '@components/sections/CustomPricing.astro'
+import { Link } from 'accessible-astro-components'
+
+<PageHeader
+  title="Avaliação de Acessibilidade"
+  subtitle="Revele o caminho real para a conformidade WCAG. Diagnosticar barreiras não é apenas técnica; é o alicerce de uma arquitetura que garante autonomia para cada usuário. "
+  class="bg-rosewood-950 text-white"
+>
+  <Link isButton href="#packages">
+    Explorar pacotes
+  </Link>
+</PageHeader>
+
+<PricingTable
+  title="Planos de Auditoria"
+  subtitle="Três níveis de rigor técnico projetados para diferentes estágios de maturidade digital."
+  tiers={[
+    {
+      title: 'Bronze',
+      tier: 'bronze',
+      price: 'R$ 850,00',
+      description: 'Validação inicial de fluxos',
+      features: [
+        { text: 'Avaliação de 5 páginas críticas' },
+        { text: 'Relatório técnico sumário' },
+        { text: 'Sugestões básicas de correção' },
+        { text: 'Foco em WCAG 2.2 (A/AA)' },
+      ],
+    },
+    {
+      title: 'Prata',
+      tier: 'prata',
+      price: 'R$ 2.800',
+      description: 'Foco em fluxos de conversão',
+      recommended: true,
+      features: [
+        { text: 'Avaliação de 15 páginas' },
+        { text: 'Validação de componentes globais' },
+        { text: 'Auditoria de Checkout/Cadastro' },
+        { text: 'Relatório técnico detalhado' },
+        { text: 'Reunião de debrief (1h)' },
+      ],
+    },
+    {
+      title: 'Ouro',
+      tier: 'ouro',
+      price: 'R$ 12.000',
+      description: 'Ecossistema completo',
+      features: [
+        { text: 'Auditoria de 30+ páginas' },
+        { text: 'Testes manuais (Tecnologias Assistivas)' },
+        { text: 'Auditoria profunda de UX inclusivo' },
+        { text: 'Suporte técnico (30 dias)' },
+        { text: 'Workshop prático (4h)' },
+      ],
+    },
+  ]}
+/>
+
+<CustomPricing
+  title="Arquitetura de Avaliação Sob Medida"
+  description="Projetos complexos exigem escopos exclusivos. Se o seu ecossistema possui demandas singulares, desenhamos uma consultoria personalizada focada nos seus objetivos de negócio."
+/>

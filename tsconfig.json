@@ -4,6 +4,10 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
+      "@components/ui/*": ["src/components/ui/*"],
+      "@components/sections/*": ["src/components/sections/*"],
+      "@components/layout/*": ["src/components/layout/*"],
+      "@components/features/*": ["src/components/features/*"],
       "@layouts/*": ["src/layouts/*"],
       "@assets/*": ["src/assets/*"],
       "@utils/*": ["src/utils/*"],
