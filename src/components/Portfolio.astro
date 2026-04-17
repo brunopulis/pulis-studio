@@ -44,14 +44,16 @@ const featuredProjects = projects.slice(0, limit).map((project, index) => ({
 }))
 ---
 
-<section class="bg-surface-container-high px-8 py-24">
+<section class="bg-brand-primary px-8 py-24">
   <div class="mx-auto max-w-7xl">
     <div class="mb-16 flex flex-col items-end justify-between gap-8 md:flex-row">
       <div class="max-w-xl">
-        <p class="text-vista-blue mb-4 text-sm font-bold tracking-[0.15em] uppercase">RESULTADOS</p>
-        <h2 class="font-serif text-4xl">Projetos que definem o <span class="text-brand-red italic">padrão.</span></h2>
+        <p class="text-brand-secondary mb-4 text-sm font-bold tracking-[0.15em] uppercase">RESULTADOS</p>
+        <h2 class="font-serif text-4xl text-white">
+          Projetos que definem o <span class="text-brand-red italic">padrão.</span>
+        </h2>
       </div>
-      <a class="group text-brand-red flex items-center gap-2 font-bold" href="#">
+      <a class="group text-brand-white flex items-center gap-2 font-bold" href="#">
         Ver portfólio completo
         <ChevronRight class="transition-transform group-hover:translate-x-1" aria-hidden="true" />
       </a>
@@ -63,6 +65,7 @@ const featuredProjects = projects.slice(0, limit).map((project, index) => ({
           <Card
             imageComponent={project.featuredImage}
             url={'/portfolio/' + project.id}
+            class="bg-white"
             headingLevel="h2"
             title={project.data.title}
             footer={'Autor: ' + project.data.author}

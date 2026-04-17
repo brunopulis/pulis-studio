@@ -3,8 +3,8 @@ import '../styles/tailwind.css'
 import '../assets/scss/index.scss'
 import themeConfig from '@theme-config'
 import { SEO } from 'astro-seo'
-import Header from '@components/layout/Header.astro'
-import Footer from '@components/layout/Footer.astro'
+import Header from '@components/Header.astro'
+import Footer from '@components/Footer.astro'
 import { ClientRouter } from 'astro:transitions'
 import type { ImageMetadata } from 'astro'
 
@@ -119,6 +119,17 @@ const imageUrl = new URL(imagePath, Astro.site).href
     <ClientRouter />
   </head>
   <body>
+    <div
+      class="bg-brand-neutral border-wash/20 relative z-[51] flex w-full items-center justify-center gap-2 border-b px-4 py-1.5 text-white"
+    >
+      <span class="flex-shrink-0 text-inherit"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" viewBox="0 0 256 256"
+          ><path
+            d="M120,136V96a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm8,48a12,12,0,1,0-12-12A12,12,0,0,0,128,184ZM224,56v56c0,52.72-25.52,84.67-46.93,102.19-23.06,18.86-46,25.27-47,25.53a8,8,0,0,1-4.2,0c-1-.26-23.91-6.67-47-25.53C57.52,196.67,32,164.72,32,112V56A16,16,0,0,1,48,40H208A16,16,0,0,1,224,56Zm-16,0L48,56l0,56c0,37.3,13.82,67.51,41.07,89.81A128.25,128.25,0,0,0,128,223.62a129.3,129.3,0,0,0,39.41-22.2C194.34,179.16,208,149.07,208,112Z"
+          ></path></svg
+        ></span
+      ><p class="text-xs font-medium">Este site está com redesign aberto, se algo estranho acontecer é por isso.</p>
+    </div>
     <Header />
     <main id="main-content" transition:animate="fade">
       <slot />

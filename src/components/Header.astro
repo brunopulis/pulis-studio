@@ -1,6 +1,6 @@
 ---
-import Navigation from '@components/layout/Navigation.astro'
-import LauncherConfig from '@components/features/LauncherConfig.astro'
+import Navigation from '@components/Navigation.astro'
+import LauncherConfig from '@components/LauncherConfig.astro'
 import { HighContrast, ReducedMotion, SkipLink } from 'accessible-astro-components'
 
 /**
@@ -24,7 +24,7 @@ import { HighContrast, ReducedMotion, SkipLink } from 'accessible-astro-componen
 </header>
 
 <style lang="scss" is:global>
-  @use '@assets/scss/base/breakpoint' as *;
+  @use '../assets/scss/base/breakpoint' as *;
 
   header {
     li.type-icon {

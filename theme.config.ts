@@ -4,20 +4,19 @@ import logoImage from '@assets/images/logo.svg'
 
 export default defineThemeConfig({
   name: 'Bruno Pulis',
-  id: 'accessible-astro-starter',
+  id: 'bp',
   logo: logoImage,
   seo: {
-    title: 'Accessible Astro Starter',
-    description:
-      'An Accessible Starter Theme for Astro including several accessibility features and tools to help you build faster.',
-    author: 'Incluud',
+    title: 'Bruno Pulis',
+    description: 'Engenheiro de acessibilidade digital',
+    author: 'Bruno Pulis',
     image: previewImage, // Can also be a string e.g. '/social-preview-image.png',
   },
   colors: {
     primary: '#610404',
-    secondary: '#00d1b7',
-    neutral: '#b9bec4',
-    outline: '#ff4500',
+    secondary: '#849cdb',
+    neutral: '#171e1e',
+    outline: '#d9d9d9',
   },
   navigation: {
     darkmode: false,
@@ -90,12 +89,12 @@ export default defineThemeConfig({
   socials: [
     {
       label: 'GitHub',
-      href: 'https://github.com/incluud/',
+      href: 'https://github.com/brunopulis/',
       icon: 'lucide:github',
     },
     {
       label: 'Bluesky',
-      href: 'https://bsky.app/profile/incluud.dev',
+      href: 'https://bsky.app/profile/brunopulis.com',
       icon: 'lucide:bot-message-square',
     },
     {

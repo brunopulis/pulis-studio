@@ -55,17 +55,17 @@ export type ThemeConfig = {
 
 const defaultConfig: Omit<ThemeConfig, 'name' | 'id'> = {
   seo: {
-    title: 'My Astro Site',
-    subtitle: '',
-    description: 'A website built with Accessible Astro Starter',
-    author: '',
+    title: 'Bruno Pulis',
+    subtitle: 'Engenheiro de acessibilidade digital',
+    description: 'Consultoria, auditoria, treinamentos e desenvolvimento.',
+    author: 'Bruno Pulis',
     image: null,
   },
   colors: {
-    primary: '#d648ff',
-    secondary: '#00d1b7',
-    neutral: '#b9bec4',
-    outline: '#ff4500',
+    primary: '#610404',
+    secondary: '#849CDB',
+    neutral: '#171E1E',
+    outline: '#D9D9D9',
   },
   navigation: {
     darkmode: true,

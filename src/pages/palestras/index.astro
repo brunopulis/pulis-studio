@@ -1,0 +1,221 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import { Link } from 'accessible-astro-components'
+---
+
+<DefaultLayout title="Serviços - Bruno Pulis" useTitleTemplate={false}>
+  <section class="bg-surface-container-lowest relative overflow-hidden px-8 py-24">
+    <div class="container mx-auto grid items-center gap-12 md:grid-cols-2">
+      <div class="z-10">
+        <span class="architect-label mb-4 block uppercase">Palestrante e Especialista</span>
+        <h1 class="text-brand-blood-red mb-6 text-5xl leading-tight font-bold md:text-7xl">
+          Palestras e <span class="font-normal italic">Workshops</span>
+        </h1>
+        <p class="text-on-surface-variant mb-8 max-w-xl text-xl leading-relaxed font-light md:text-2xl">
+          Compartilhando conhecimento técnico e estratégias práticas para transformar a web em um espaço verdadeiramente
+          inclusivo para todos.
+        </p>
+        <div class="flex gap-4">
+          <Link
+            isButton
+            class="bg-brand-blood-red focus:ring-brand-vista-blue rounded-lg px-8 py-4 text-lg font-bold text-white transition-all outline-none hover:opacity-90 focus:ring-2"
+            href="#proximas"
+          >
+            Ver Agenda
+          </Link>
+        </div>
+      </div>
+      <div class="relative hidden md:block">
+        <div
+          class="bg-surface-container-high aspect-square overflow-hidden rounded-lg grayscale transition-all duration-700 hover:grayscale-0"
+        >
+          <img
+            alt="Bruno Pulis em uma palestra sobre acessibilidade"
+            class="h-full w-full object-cover"
+            data-alt="Professional man speaking on a stage with a microphone in a modern conference hall with architectural lighting"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_qqOiECp6ckR7eKYYu4Diw-SfQc3jIVfObYqTp7Lc7JkFLDvCMliqQUBXyOUQYfbe1pkTmgbd3bIgKY2yX3R3KSLovS40WL3-vBsPIRDevKWBE780CfHWmyT2OWsxa2PNzLB3ZrpcdJz_25K6TOwT5VR-8KIeYdPY2qETeocmPrDtllBKiDYGRd7IEfrTtUit0qxp4iJnSelv9ukndRUYarLpQOQP5EQHybItgBh-MSLkhXEzEKPefWSfOug2HTUgcOMoYSgaJ88"
+          />
+        </div>
+        <div class="bg-brand-vista-blue absolute -bottom-6 -left-6 rounded-lg p-6 text-white">
+          <p class="font-serif text-3xl font-bold italic">100+</p>
+          <p class="font-sans text-xs tracking-widest uppercase">Eventos Realizados</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-surface-container-low absolute top-0 right-0 -z-0 h-full w-1/3"></div>
+  </section>
+
+  <section class="bg-surface-container-low px-8 py-24" id="proximas">
+    <div class="mx-auto max-w-7xl">
+      <div class="border-outline-variant mb-12 flex flex-col items-baseline justify-between border-b pb-8 md:flex-row">
+        <div>
+          <span class="architect-label">AGENDA</span>
+          <h2 class="text-on-surface mt-2 text-4xl font-bold">Palestras Agendadas</h2>
+        </div>
+        <p class="text-on-surface-variant mt-4 font-serif italic md:mt-0">
+          Sessões técnicas confirmadas para este ano.
+        </p>
+      </div>
+      <div class="space-y-4">
+        <!-- Agendada Item -->
+        <div
+          class="bg-surface-container-lowest flex flex-col items-center gap-8 rounded-lg p-6 transition-transform hover:-translate-y-1 md:flex-row md:p-8"
+        >
+          <div
+            class="border-outline-variant flex min-w-[120px] flex-col items-center justify-center border-r-0 pr-0 text-center md:border-r md:pr-8"
+          >
+            <span class="text-brand-blood-red font-serif text-4xl font-bold">15</span>
+            <span class="text-on-surface-variant text-xs font-bold tracking-widest uppercase">OUT 2024</span>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-on-surface mb-1 text-2xl font-bold">Accessibility First: O Futuro do Frontend</h3>
+            <p class="text-on-surface-variant font-light">FrontIn Sampa • São Paulo, Brasil</p>
+          </div>
+          <a
+            class="group text-brand-blood-red flex items-center gap-2 text-sm font-bold tracking-widest uppercase transition-all hover:gap-4"
+            href="#"
+          >
+            DETALHES DO EVENTO
+            <span aria-hidden="true" class="text-brand-vista-blue material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+        <!-- Agendada Item -->
+        <div
+          class="bg-surface-container-lowest flex flex-col items-center gap-8 rounded-lg p-6 transition-transform hover:-translate-y-1 md:flex-row md:p-8"
+        >
+          <div
+            class="border-outline-variant flex min-w-[120px] flex-col items-center justify-center border-r-0 pr-0 text-center md:border-r md:pr-8"
+          >
+            <span class="text-brand-blood-red font-serif text-4xl font-bold">02</span>
+            <span class="text-on-surface-variant text-xs font-bold tracking-widest uppercase">NOV 2024</span>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-on-surface mb-1 text-2xl font-bold">Workshop: WCAG 2.2 de A a Z</h3>
+            <p class="text-on-surface-variant font-light">DevFest NE • Salvador, Brasil</p>
+          </div>
+          <a
+            class="group text-brand-blood-red flex items-center gap-2 text-sm font-bold tracking-widest uppercase transition-all hover:gap-4"
+            href="#"
+          >
+            GARANTIR VAGA
+            <span aria-hidden="true" class="text-brand-vista-blue material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-surface-container-lowest px-8 py-24">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-16">
+        <span class="architect-label">HISTÓRICO</span>
+        <h2 class="text-on-surface mt-2 text-4xl font-bold">Palestras Realizadas</h2>
+        <div class="bg-brand-blood-red mt-6 h-1 w-24"></div>
+      </div>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="group bg-surface-container-low relative h-96 overflow-hidden rounded-lg md:col-span-2">
+          <div class="absolute inset-0 opacity-30 grayscale transition-all duration-700 group-hover:grayscale-0">
+            <img
+              alt="Slide da palestra Arquitetura de Acessibilidade"
+              class="h-full w-full object-cover"
+              data-alt="Modern stage at a tech conference with large screens showing accessibility diagrams and code snippets"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfsoOyat9I33Iv2I-EoGwYYfSUk_YeGcTtvvrm33IYfCkG8k4TAxDw7kAhLgkWOdB9I8GkQ_ekCYmD7fEZCwPS-8KASRzjjdmSCQ4vpANATYHmQRzd_35xx2kactM9_OlnPy3EgK7rQNxR_rKEtKn0bHW-GUM4xDO7wWNRzsU5PkaeLeToPddFzEDsoGzCDJzTQKMT778Hy7EF_qvzGyLBj3kMAgxtFunqGrSVbjAD2GPWZH8uDtCmhTakIppKsEQ7CguJeIp-ZoE"
+            />
+          </div>
+          <div class="relative flex h-full flex-col justify-end p-10">
+            <span class="text-brand-vista-blue mb-2 text-xs font-bold tracking-widest uppercase">Technical Keynote</span
+            >
+            <h3 class="text-on-surface mb-4 text-3xl font-bold">Arquitetura de Acessibilidade no Frontend</h3>
+            <p class="text-on-surface-variant mb-6 max-w-lg font-light">
+              Uma exploração profunda sobre como estruturar aplicações modernas que nascem acessíveis desde a primeira
+              linha de código.
+            </p>
+            <div class="flex gap-4">
+              <span class="bg-surface-container-highest rounded px-3 py-1 text-xs font-bold">SLIDES</span>
+              <span class="bg-surface-container-highest rounded px-3 py-1 text-xs font-bold">VÍDEO</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-brand-blood-red flex flex-col justify-between rounded-lg p-8 text-white">
+          <div>
+            <span class="text-brand-vista-blue mb-4 block text-xs font-bold tracking-widest uppercase">Workshop</span>
+            <h3 class="mb-4 font-serif text-2xl font-bold">WCAG 2.2 na Prática</h3>
+          </div>
+          <p class="mb-8 text-sm leading-relaxed font-light opacity-80">
+            Análise técnica das novas diretrizes e como implementá-las em ecossistemas de design complexos.
+          </p>
+          <div class="group flex cursor-pointer items-center gap-2">
+            <span class="text-xs font-bold tracking-tighter uppercase">Ver material didático</span>
+            <span
+              aria-hidden="true"
+              class="text-brand-vista-blue material-symbols-outlined transition-transform group-hover:translate-x-1"
+              >open_in_new</span
+            >
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-surface-container-low rounded-lg p-8">
+          <span class="text-brand-vista-blue mb-4 block text-xs font-bold tracking-widest uppercase">Conf Talk</span>
+          <h3 class="mb-4 text-xl font-bold">Acessibilidade Além do Screen Reader</h3>
+          <p class="text-on-surface-variant mb-6 text-sm font-light">
+            Expandindo o conceito de inclusão para neurodiversidade e deficiências motoras.
+          </p>
+          <p class="text-brand-blood-red text-xs font-bold">BrazilJS 2023</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-surface-container-low rounded-lg p-8">
+          <span class="text-brand-vista-blue mb-4 block text-xs font-bold tracking-widest uppercase"
+            >Technical Session</span
+          >
+          <h3 class="mb-4 text-xl font-bold">Semantic HTML &amp; WAI-ARIA Masterclass</h3>
+          <p class="text-on-surface-variant mb-6 text-sm font-light">
+            O poder do HTML semântico no SEO e na experiência do usuário inclusiva.
+          </p>
+          <p class="text-brand-blood-red text-xs font-bold">The Developers Conference</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-brand-vista-blue text-brand-eerie-black flex flex-col justify-between rounded-lg p-8">
+          <span aria-hidden="true" class="material-symbols-outlined text-4xl">history_edu</span>
+          <div>
+            <h3 class="mb-2 text-xl font-bold">Acessibilidade: Um Compromisso Ético</h3>
+            <p class="text-sm opacity-80">Palestra magna sobre a responsabilidade social do desenvolvedor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-aztec-900 relative overflow-hidden px-8 py-24 text-white" id="contact">
+    <div class="relative z-10 mx-auto max-w-4xl text-center">
+      <span class="text-brand-vista-blue architect-label mb-6 block">CONTATO PARA EVENTOS</span>
+      <h2 class="mb-8 text-4xl leading-tight font-bold md:text-6xl">
+        Convide-me para o seu evento ou treinamento corporativo
+      </h2>
+      <p class="mx-auto mb-12 max-w-2xl text-xl leading-relaxed font-light opacity-80">
+        Palestras técnicas, painéis ou workshops práticos personalizados para a necessidade do seu time de produto e
+        desenvolvimento.
+      </p>
+      <div class="flex flex-col justify-center gap-6 sm:flex-row">
+        <a
+          class="hover:bg-brand-vista-blue text-brand-blood-red flex items-center justify-center gap-3 rounded-lg bg-white px-10 py-5 text-lg font-bold transition-all outline-none hover:text-white focus:ring-2 focus:ring-white"
+          href="mailto:contato@brunopulis.com"
+        >
+          <span aria-hidden="true" class="material-symbols-outlined">mail</span>
+          Enviar e-mail
+        </a>
+        <a
+          class="flex items-center justify-center gap-3 rounded-lg border border-white/20 px-10 py-5 text-lg font-bold transition-all hover:bg-white/10"
+          href="#"
+        >
+          <span aria-hidden="true" class="material-symbols-outlined">download</span>
+          Media Kit
+        </a>
+      </div>
+    </div>
+    <!-- Abstract background element -->
+    <div class="bg-brand-blood-red/10 absolute top-0 right-0 -mt-48 -mr-48 h-96 w-96 rounded-full blur-3xl"></div>
+    <div class="bg-brand-vista-blue/5 absolute bottom-0 left-0 -mb-48 -ml-48 h-96 w-96 rounded-full blur-3xl"></div>
+  </section>
+</DefaultLayout>

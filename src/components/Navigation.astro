@@ -1,7 +1,7 @@
 ---
-import ResponsiveToggle from '../features/ResponsiveToggle.astro'
-import NavigationItems from '../ui/NavigationItems.astro'
-import Logo from '../ui/Logo.astro'
+import ResponsiveToggle from '@components/ResponsiveToggle.astro'
+import NavigationItems from '@components/NavigationItems.astro'
+import Logo from '@components/Logo.astro'
 import { LauncherTrigger } from 'accessible-astro-launcher'
 
 /**
@@ -215,8 +215,8 @@ import { LauncherTrigger } from 'accessible-astro-launcher'
 </script>
 
 <style lang="scss" is:global>
-  @use '../../assets/scss/base/mixins' as *;
-  @use '../../assets/scss/base/breakpoint' as *;
+  @use '../assets/scss/base/mixins' as *;
+  @use '../assets/scss/base/breakpoint' as *;
 
   #main-navigation {
     > .container {

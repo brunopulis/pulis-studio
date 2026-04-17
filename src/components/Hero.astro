@@ -1,0 +1,33 @@
+---
+import { Link } from 'accessible-astro-components'
+import pulisImage from '@assets/images/pulis.webp'
+---
+
+<section class="mx-auto mb-32 grid max-w-7xl items-center gap-16 px-8 md:grid-cols-2">
+  <div class="space-y-8">
+    <h1 class="text-5xl leading-tight md:text-7xl">
+      Acessibilidade como <span class="text-brand-primary italic">convicção</span>
+    </h1>
+    <p class="max-w-2xl text-xl leading-relaxed font-light md:text-2xl">
+      Sou Bruno Pulis. Trabalho com acessibilidade digital e front-end para construir uma web onde a barreira técnica
+      seja superada pela arquitetura da inclusão.
+    </p>
+    <div class="flex gap-4">
+      <a href="/portfolio" class="bg-brand-primary px-8 py-4 text-sm font-bold text-white uppercase no-underline">
+        Ver Portfólio
+      </a>
+      <a href="/contato" class="border-brand-primary text-brand-primary text-sm font-bold uppercase no-underline">
+        Fale comigo
+      </a>
+    </div>
+  </div>
+  <div class="relative">
+    <div class="bg-surface-container-low flex aspect-4/5 items-center overflow-hidden">
+      <img
+        class="h-128 w-lg rounded-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
+        alt="Retrato profissional de um homem com óculos minimalistas em um estúdio com iluminação suave"
+        src={pulisImage.src}
+      />
+    </div>
+  </div>
+</section>

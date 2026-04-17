@@ -1,0 +1,87 @@
+---
+import FeatureItem from '@components/FeatureItem.astro'
+import Badge from '@components/Badge.astro'
+
+interface Feature {
+  text: string
+}
+
+interface Props {
+  title: string
+  tier: 'bronze' | 'prata' | 'ouro'
+  price: string
+  description: string
+  features: Feature[]
+  recommended?: boolean
+  buttonText?: string
+}
+
+const {
+  title,
+  tier,
+  price,
+  description,
+  features,
+  recommended = false,
+  buttonText = `Selecionar ${title}`,
+}: Props = Astro.props
+---
+
+<article
+  class:list={[
+    'architect-shadow flex h-full flex-col rounded-lg p-8 transition-transform hover:-translate-y-1',
+    recommended
+      ? 'border-rosewood-950 relative z-10 border-t-4 bg-white md:scale-105'
+      : tier === 'bronze'
+        ? 'border-t-4 border-[#e2e2e2] bg-white'
+        : 'bg-rosewood-950 border-t-4 border-[#849CDB]',
+  ]}
+>
+  {recommended && <Badge text="Recomendado" variant="primary" class="absolute -top-4 left-1/2 -translate-x-1/2" />}
+
+  <div class="mb-8" class:list={recommended ? '' : tier === 'ouro' ? 'text-white' : ''}>
+    <span
+      class:list={[
+        'text-xs font-bold tracking-widest uppercase',
+        recommended || tier === 'bronze' ? 'text-on-surface-variant' : 'text-[#849CDB]',
+      ]}
+    >
+      {title}
+    </span>
+    <h3 class="mt-2 text-3xl font-bold">{title}</h3>
+    <p
+      class:list={[
+        'mt-4 text-4xl font-bold',
+        tier === 'bronze' ? 'text-rosewood-950' : tier === 'prata' ? 'text-rosewood-950' : 'text-[#849CDB]',
+      ]}
+    >
+      {price}
+    </p>
+    <p class:list={['mt-1 text-sm', tier === 'ouro' ? 'text-[#D9D9D9] opacity-70' : 'text-on-surface-variant']}>
+      {description}
+    </p>
+  </div>
+
+  <h4 class="my-4 text-xl font-bold" class:list={tier === 'ouro' ? 'text-white' : ''}>Entregáveis do pacote</h4>
+
+  <ul
+    class:list={['mb-12 grow space-y-4', tier === 'ouro' ? 'text-white' : 'text-on-surface']}
+    aria-label={`Entregáveis do pacote ${title}`}
+  >
+    {features.map((feature) => <FeatureItem>{feature.text}</FeatureItem>)}
+  </ul>
+
+  <button
+    aria-label={`Selecionar pacote ${title}`}
+    class:list={[
+      'focus-visible w-full rounded-lg border-2 py-3 text-xs font-bold tracking-widest uppercase transition-all',
+      tier === 'bronze'
+        ? 'border-[#171E1E] text-[#171E1E] hover:bg-[#171E1E] hover:text-white'
+        : tier === 'prata'
+          ? 'bg-rosewood-950 py-4 text-white shadow-lg hover:opacity-90'
+          : 'bg-white text-[#171E1E] hover:bg-[#849CDB]',
+    ]}
+  >
+    {buttonText}
+  </button>
+</article>
