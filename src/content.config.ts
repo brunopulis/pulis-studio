@@ -26,4 +26,23 @@ const services = defineCollection({
   }),
 })
 
-export const collections = { projects, services }
+const talks = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/talks' }),
+  schema: z.object({
+    title: z.string(),
+    event: z.string(),
+    type: z.enum(['keynote', 'workshop', 'talk', 'conf']),
+    date: z.date(),
+    location: z.string(),
+    links: z
+      .object({
+        slides: z.string().url().optional(),
+        video: z.string().url().optional(),
+        recursos: z.string().url().optional(),
+      })
+      .optional(),
+    highlight: z.boolean().default(false),
+  }),
+})
+
+export const collections = { projects, services, talks }
