@@ -10,16 +10,16 @@
   --brand-white: #fff;
 
   // color scheme
-  --foreground-color: light-dark(var(--brand-neutral), var(--brand-white));
-  --background-color: light-dark(var(--brand-white), var(--brand-neutral));
-  --icon-color: light-dark(var(--brand-neutral), var(--brand-white));
-  --link-color: light-dark(var(--brand-primary), var(--brand-white));
-  --link-hover-color: light-dark(var(--brand-primary), var(--brand-white));
-  --border-color: light-dark(var(--brand-neutral), var(--brand-white));
-  --border-color-subtle: light-dark(var(--brand-neutral), var(--brand-white));
-  --text-decoration-color: light-dark(var(--brand-neutral), var(--brand-white));
-  --text-decoration-color-hover: light-dark(var(--brand-neutral), var(--brand-white));
-  --outline-color: light-dark(var(--color-outline-200), var(--color-outline-100));
+  --foreground-color: var(--brand-neutral);
+  --background-color: var(--brand-white);
+  --icon-color: var(--brand-neutral);
+  --link-color: var(--brand-white);
+  --link-hover-color: var(--brand-primary);
+  --border-color: var(--brand-neutral);
+  --border-color-subtle: var(--brand-neutral);
+  --text-decoration-color: var(--brand-neutral);
+  --text-decoration-color-hover: var(--brand-neutral);
+  --outline-color: var(--brand-neutral);
 
   // theme settings
   --radius-small: 3px;

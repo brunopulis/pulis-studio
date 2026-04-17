@@ -8,4 +8,3 @@
 }
 
 @source '../../src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}';
-@custom-variant dark (&:where(.darkmode, .darkmode *));
